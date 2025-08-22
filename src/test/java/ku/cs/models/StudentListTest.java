@@ -17,10 +17,10 @@ class StudentListTest {
     @Test
     @DisplayName("เพิ่มนักเรียน")
     void testAddStudent() {
-        studentList.addNewStudent("100", "Jozho");
-        Student student = studentList.findStudentById("100");
-        assertEquals("100", student.getId());
-        assertEquals("Jozho", student.getName());
+        studentList.addNewStudent("99", "New Student");
+        Student student = studentList.findStudentById("99");
+        assertEquals("99", student.getId());
+        assertEquals("New Student", student.getName());
         assertEquals(0, student.getScore());
     }
 
