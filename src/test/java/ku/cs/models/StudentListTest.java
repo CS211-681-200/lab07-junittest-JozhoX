@@ -1,6 +1,6 @@
 package ku.cs.models;
 
-import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -9,8 +9,8 @@ import static org.junit.jupiter.api.Assertions.*;
 class StudentListTest {
     static StudentList studentList;
 
-    @BeforeAll
-    static void init() {
+    @BeforeEach
+    void init() {
         studentList = new StudentList();
     }
 
